@@ -4,7 +4,7 @@ async function fetchLanguages() {
         method: 'GET',
         headers: {
             'x-rapidapi-host': 'google-translate1.p.rapidapi.com',
-            'x-rapidapi-key': '80dcd16133msh3f686b9443d6cafp17e92cjsn7749061957ff' // Replace with your RapidAPI key
+            'x-rapidapi-key': 'api-key to be pasted here' // Replace with api key
         }
     });
 
@@ -19,7 +19,7 @@ async function translateText(text, sourceLang, targetLang) {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             'x-rapidapi-host': 'google-translate1.p.rapidapi.com',
-            'x-rapidapi-key': '80dcd16133msh3f686b9443d6cafp17e92cjsn7749061957ff' // Replace with your RapidAPI key
+            'x-rapidapi-key': 'api key  to be pasted' // Replace with your RapidAPI key
         },
         body: `q=${encodeURIComponent(text)}&source=${sourceLang}&target=${targetLang}`
     });
